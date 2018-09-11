@@ -36,7 +36,7 @@ public class SendScorePanel extends JPanel implements Runnable{
 		nameHolder = "";
 		
 		try {
-			sendScores = ImageIO.read(new File("EndGamePics/SendScore.png")); //set up image
+			sendScores = ImageIO.read(new File("../EndGamePics/SendScore.png")); //set up image
 		} catch (IOException e) {
 			e.printStackTrace();
 		}

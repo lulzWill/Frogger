@@ -95,10 +95,10 @@ public class IntroAnimation extends JPanel implements Runnable {
 		
 		try
 		{
-			whiteText = ImageIO.read(new File("IntroPics/Frogger1.png")); //set up images
-			greenText = ImageIO.read(new File("IntroPics/Frogger2.png"));
-			greenSplat = ImageIO.read(new File("IntroPics/GreenSplat.png"));
-			splatHole = ImageIO.read(new File("IntroPics/SplatHole.png"));
+			whiteText = ImageIO.read(new File("../IntroPics/Frogger1.png")); //set up images
+			greenText = ImageIO.read(new File("../IntroPics/Frogger2.png"));
+			greenSplat = ImageIO.read(new File("../IntroPics/GreenSplat.png"));
+			splatHole = ImageIO.read(new File("../IntroPics/SplatHole.png"));
 		}
 		catch(IOException e)
 		{
@@ -148,7 +148,7 @@ public class IntroAnimation extends JPanel implements Runnable {
 		InputStream in;  //first set up the music and play it
 		
 		try {
-			in = new BufferedInputStream(new FileInputStream(new File("Music/Intro Song.mid")));
+			in = new BufferedInputStream(new FileInputStream(new File("../Music/Intro Song.mid")));
 			introSongSeq.setSequence(in);
 		} catch (IOException | InvalidMidiDataException e) {
 

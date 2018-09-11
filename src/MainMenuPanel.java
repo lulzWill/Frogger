@@ -39,15 +39,15 @@ public class MainMenuPanel extends JPanel implements Runnable, KeyListener{
 		this.addKeyListener(this);
 		try
 		{   //set up the images
-			splatHole = ImageIO.read(new File("IntroPics/SplatHole.png"));
-			startBlack = ImageIO.read(new File("MainMenuPics/Start Game Black.png"));
-			startYellow = ImageIO.read(new File("MainMenuPics/Start Game Yellow.png"));
-			highScoresBlack = ImageIO.read(new File("MainMenuPics/High Scores Black.png"));
-			highScoresYellow = ImageIO.read(new File("MainMenuPics/High Scores Yellow.png"));
-			quitBlack = ImageIO.read(new File("MainMenuPics/Quit Black.png"));
-			quitYellow = ImageIO.read(new File("MainMenuPics/Quit Yellow.png"));
-			optionsBlack = ImageIO.read(new File("MainMenuPics/Options Black.png"));
-			optionsYellow = ImageIO.read(new File("MainMenuPics/Options Yellow.png"));
+			splatHole = ImageIO.read(new File("../IntroPics/SplatHole.png"));
+			startBlack = ImageIO.read(new File("../MainMenuPics/Start Game Black.png"));
+			startYellow = ImageIO.read(new File("../MainMenuPics/Start Game Yellow.png"));
+			highScoresBlack = ImageIO.read(new File("../MainMenuPics/High Scores Black.png"));
+			highScoresYellow = ImageIO.read(new File("../MainMenuPics/High Scores Yellow.png"));
+			quitBlack = ImageIO.read(new File("../MainMenuPics/Quit Black.png"));
+			quitYellow = ImageIO.read(new File("../MainMenuPics/Quit Yellow.png"));
+			optionsBlack = ImageIO.read(new File("../MainMenuPics/Options Black.png"));
+			optionsYellow = ImageIO.read(new File("../MainMenuPics/Options Yellow.png"));
 		}
 		catch(IOException e)
 		{
@@ -123,10 +123,10 @@ public class MainMenuPanel extends JPanel implements Runnable, KeyListener{
 		InputStream in;					 //hits enter, and repaints the appropriate images
 		InputStream in2;
 		try {
-			in = new BufferedInputStream(new FileInputStream(new File("Music/MoveSelect.mid")));
+			in = new BufferedInputStream(new FileInputStream(new File("../Music/MoveSelect.mid")));
 			moveSelectSeq.setSequence(in);
 
-			in2 = new BufferedInputStream(new FileInputStream(new File("Music/Selection.mid")));
+			in2 = new BufferedInputStream(new FileInputStream(new File("../Music/Selection.mid")));
 			selectionSeq.setSequence(in2);
 		} catch (IOException | InvalidMidiDataException e1) {
 			e1.printStackTrace();

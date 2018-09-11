@@ -62,14 +62,14 @@ public class DissapearingGameObject extends MovingGameObject{
 	public void submerge()
 	{
 		interactable = false;
-		setPic("GamePics/empty.png");
+		setPic("../GamePics/empty.png");
 		repaint();
 	}
 	//shows shadow before submerging
 	public void shadow()
 	{
 		interactable = true;
-		setPic("GamePics/turtleShadow.png");
+		setPic("../GamePics/turtleShadow.png");
 		repaint();
 	}
 	//allows object to reappear

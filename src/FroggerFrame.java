@@ -87,11 +87,11 @@ public class FroggerFrame extends JFrame{
 		InputStream in2;
 		setBackground(Color.GRAY);
 		try {
-			in = new BufferedInputStream(new FileInputStream(new File("Music/Frogger.mid")));
+			in = new BufferedInputStream(new FileInputStream(new File("../Music/Frogger.mid")));
 			mainSongSeq.setSequence(in);
 			mainSongSeq.setLoopCount(Sequencer.LOOP_CONTINUOUSLY);
 			
-			in2 = new BufferedInputStream(new FileInputStream(new File("Music/Game Song.mid")));
+			in2 = new BufferedInputStream(new FileInputStream(new File("../Music/Game Song.mid")));
 			gameSongSeq.setSequence(in2);
 			gameSongSeq.setLoopCount(Sequencer.LOOP_CONTINUOUSLY);
 		} catch (IOException | InvalidMidiDataException e) {

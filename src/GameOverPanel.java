@@ -25,7 +25,7 @@ public class GameOverPanel extends JPanel implements Runnable{
 	public GameOverPanel(){
 		try
 		{
-			gameOverText = ImageIO.read(new File("GameOverPics/Game Over.png"));//set up the file image
+			gameOverText = ImageIO.read(new File("../GameOverPics/Game Over.png"));//set up the file image
 		}
 		catch(IOException e)
 		{
@@ -53,7 +53,7 @@ public class GameOverPanel extends JPanel implements Runnable{
 		InputStream in; //set up the music
 		
 		try {
-			in = new BufferedInputStream(new FileInputStream(new File("Music/Game Over.mid")));
+			in = new BufferedInputStream(new FileInputStream(new File("../Music/Game Over.mid")));
 			gameOverSongSeq.setSequence(in);
 		} catch (IOException | InvalidMidiDataException e) {
 

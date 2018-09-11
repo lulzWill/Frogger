@@ -47,10 +47,10 @@ public class Frog extends JPanel implements KeyListener, Runnable{
 	public Frog(int x, int y, int s)
 	{
 		//initialize local vars
-		idleFrog = "GamePics/frogFrame1.png";
-		movingFrog = "GamePics/frogFrame2.png";
-		sideFrog = "GamePics/frogFrameSide1.png";
-		movingSideFrog = "GamePics/frogFrame2Side.png";
+		idleFrog = "../GamePics/frogFrame1.png";
+		movingFrog = "../GamePics/frogFrame2.png";
+		sideFrog = "../GamePics/frogFrameSide1.png";
+		movingSideFrog = "../GamePics/frogFrame2Side.png";
 		codes = "";
 		maxHeight = 600;
 		score = 0;
@@ -144,7 +144,7 @@ public class Frog extends JPanel implements KeyListener, Runnable{
 		//if frog is dead, sets its image to flat
 		else
 		{	
-			setFrogPic("GamePics/splatSmall.png");
+			setFrogPic("../GamePics/splatSmall.png");
 			g2D.drawImage(frogPic, 0, 10, width, height, this);
 		}
 	}
@@ -310,10 +310,10 @@ public class Frog extends JPanel implements KeyListener, Runnable{
 		//turns frog into casavant when "cas" is entered
 		if(codes.equals("cas"))
 		{
-			idleFrog = "GamePics/cas.png";
-			movingFrog = "GamePics/cas.png";
-			sideFrog = "GamePics/cas.png";
-			movingSideFrog = "GamePics/cas.png";
+			idleFrog = "../GamePics/cas.png";
+			movingFrog = "../GamePics/cas.png";
+			sideFrog = "../GamePics/cas.png";
+			movingSideFrog = "../GamePics/cas.png";
 			repaint();
 		}
 		//turns frog into its default when "frog" is entered
@@ -325,10 +325,10 @@ public class Frog extends JPanel implements KeyListener, Runnable{
 		//turns frog into johnson when "john" is entered
 		else if(codes.equals("john"))
 		{
-			idleFrog = "GamePics/john.png";
-			movingFrog = "GamePics/john.png";
-			sideFrog = "GamePics/john.png";
-			movingSideFrog = "GamePics/john.png";
+			idleFrog = "../GamePics/john.png";
+			movingFrog = "../GamePics/john.png";
+			sideFrog = "../GamePics/john.png";
+			movingSideFrog = "../GamePics/john.png";
 			repaint();
 		}
 		//makes frog immune to collisions when "godfrog" is entered
@@ -340,10 +340,10 @@ public class Frog extends JPanel implements KeyListener, Runnable{
 	//used to set the frog back to default
 	public void resetFrogPic()
 	{
-		idleFrog = "GamePics/frogFrame1.png";
-		movingFrog = "GamePics/frogFrame2.png";
-		sideFrog = "GamePics/frogFrameSide1.png";
-		movingSideFrog = "GamePics/frogFrame2Side.png";
+		idleFrog = "../GamePics/frogFrame1.png";
+		movingFrog = "../GamePics/frogFrame2.png";
+		sideFrog = "../GamePics/frogFrameSide1.png";
+		movingSideFrog = "../GamePics/frogFrame2Side.png";
 	}
 		
 	//plays the bounce sound
@@ -351,7 +351,7 @@ public class Frog extends JPanel implements KeyListener, Runnable{
 	{
 		try
 		{
-			InputStream in = new BufferedInputStream(new FileInputStream(new File("Music/Bounce.mid")));
+			InputStream in = new BufferedInputStream(new FileInputStream(new File("../Music/Bounce.mid")));
 			bounceSeq.setSequence(in);
 			bounceSeq.start();
 		}
@@ -365,7 +365,7 @@ public class Frog extends JPanel implements KeyListener, Runnable{
 	{
 		try
 		{
-			InputStream in = new BufferedInputStream(new FileInputStream(new File("Music/Death.mid")));
+			InputStream in = new BufferedInputStream(new FileInputStream(new File("../Music/Death.mid")));
 			deathSeq.setSequence(in);
 			deathSeq.start();
 		}
@@ -379,7 +379,7 @@ public class Frog extends JPanel implements KeyListener, Runnable{
 	{
 		try
 		{
-			InputStream in = new BufferedInputStream(new FileInputStream(new File("Music/Victory.mid")));
+			InputStream in = new BufferedInputStream(new FileInputStream(new File("../Music/Victory.mid")));
 			victorySeq.setSequence(in);
 			victorySeq.start();
 		}

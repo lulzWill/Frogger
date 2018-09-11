@@ -44,8 +44,8 @@ public class HighScorePanel extends JPanel implements Runnable, KeyListener{
 		setBackground(Color.GRAY);
 		
 		try {
-			mainMenuYellow = ImageIO.read(new File("EndGamePics/Main Menu Yellow.png"));   //get the images for the
-			highScoresBlack = ImageIO.read(new File("MainMenuPics/High Scores Black.png"));//fancy text
+			mainMenuYellow = ImageIO.read(new File("../EndGamePics/Main Menu Yellow.png"));   //get the images for the
+			highScoresBlack = ImageIO.read(new File("../MainMenuPics/High Scores Black.png"));//fancy text
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
@@ -80,7 +80,7 @@ public class HighScorePanel extends JPanel implements Runnable, KeyListener{
 		if(e.getKeyCode() == KeyEvent.VK_ENTER)
 		{
 			try {
-				in = new BufferedInputStream(new FileInputStream(new File("Music/Selection.mid")));
+				in = new BufferedInputStream(new FileInputStream(new File("../Music/Selection.mid")));
 				selectionSeq.setSequence(in);
 			} catch (IOException | InvalidMidiDataException e1) {
 				e1.printStackTrace();

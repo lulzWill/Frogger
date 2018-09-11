@@ -39,63 +39,63 @@ public class FroggerPanel extends JPanel implements Runnable{
 		}
 		
 		//Populate Road Row 1
-		trucks[3] = new MovingGameObject(600, 550, 10, "GamePics/betterTruck.png", RIGHT, rpDelay);
+		trucks[3] = new MovingGameObject(600, 550, 10, "../GamePics/betterTruck.png", RIGHT, rpDelay);
 		ex.execute(trucks[3]);
 		add(trucks[3]);
-		trucks[4] = new MovingGameObject(328, 550, 10, "GamePics/betterTruck.png", RIGHT, rpDelay);
+		trucks[4] = new MovingGameObject(328, 550, 10, "../GamePics/betterTruck.png", RIGHT, rpDelay);
 		ex.execute(trucks[4]);
 		add(trucks[4]);
-		trucks[5] = new MovingGameObject(56, 550, 10, "GamePics/betterTruck.png", RIGHT, rpDelay);
+		trucks[5] = new MovingGameObject(56, 550, 10, "../GamePics/betterTruck.png", RIGHT, rpDelay);
 		ex.execute(trucks[5]);
 		add(trucks[5]);
 		//Populate Road Row 2
-		trucks[8] = new MovingGameObject(600, 500, 20, "GamePics/lambo.png", RIGHT, rpDelay);
+		trucks[8] = new MovingGameObject(600, 500, 20, "../GamePics/lambo.png", RIGHT, rpDelay);
 		ex.execute(trucks[8]);
 		add(trucks[8]);
-		trucks[9] = new MovingGameObject(328, 500, 20, "GamePics/lambo.png", RIGHT, rpDelay);
+		trucks[9] = new MovingGameObject(328, 500, 20, "../GamePics/lambo.png", RIGHT, rpDelay);
 		ex.execute(trucks[9]);
 		add(trucks[9]);
-		trucks[10] = new MovingGameObject(150, 500, 20, "GamePics/lambo.png", RIGHT, rpDelay);
+		trucks[10] = new MovingGameObject(150, 500, 20, "../GamePics/lambo.png", RIGHT, rpDelay);
 		ex.execute(trucks[10]);
 		add(trucks[10]);
 		//PopulateRoad Row 3
-		trucks[6] = new MovingGameObject(428, 450, 20, "GamePics/betterTruck.png", RIGHT, rpDelay);
+		trucks[6] = new MovingGameObject(428, 450, 20, "../GamePics/betterTruck.png", RIGHT, rpDelay);
 		ex.execute(trucks[6]);
 		add(trucks[6]);
-		trucks[7] = new MovingGameObject(56, 450, 20, "GamePics/betterTruck.png", RIGHT, rpDelay);
+		trucks[7] = new MovingGameObject(56, 450, 20, "../GamePics/betterTruck.png", RIGHT, rpDelay);
 		ex.execute(trucks[7]);
 		add(trucks[7]);
 		//Populate Road Row 4
-		trucks[11] = new MovingGameObject(0, 400, 15, "GamePics/lambo.png", LEFT, rpDelay);
+		trucks[11] = new MovingGameObject(0, 400, 15, "../GamePics/lambo.png", LEFT, rpDelay);
 		ex.execute(trucks[11]);
 		add(trucks[11]);
-		trucks[12] = new MovingGameObject(175, 400, 15, "GamePics/lambo.png", LEFT, rpDelay);
+		trucks[12] = new MovingGameObject(175, 400, 15, "../GamePics/lambo.png", LEFT, rpDelay);
 		ex.execute(trucks[12]);
 		add(trucks[12]);
-		trucks[13] = new MovingGameObject(350, 400, 15, "GamePics/lambo.png", LEFT, rpDelay);
+		trucks[13] = new MovingGameObject(350, 400, 15, "../GamePics/lambo.png", LEFT, rpDelay);
 		ex.execute(trucks[13]);
 		add(trucks[13]);
-		trucks[14] = new MovingGameObject(525, 400, 15, "GamePics/lambo.png", LEFT, rpDelay);
+		trucks[14] = new MovingGameObject(525, 400, 15, "../GamePics/lambo.png", LEFT, rpDelay);
 		ex.execute(trucks[14]);
 		add(trucks[14]);
 		//Populate Road Row 5
-		trucks[15] = new MovingGameObject(428, 350, 17, "GamePics/betterTruck.png", LEFT, rpDelay);
+		trucks[15] = new MovingGameObject(428, 350, 17, "../GamePics/betterTruck.png", LEFT, rpDelay);
 		ex.execute(trucks[15]);
 		add(trucks[15]);
-		trucks[16] = new MovingGameObject(56, 350, 17, "GamePics/betterTruck.png", LEFT, rpDelay);
+		trucks[16] = new MovingGameObject(56, 350, 17, "../GamePics/betterTruck.png", LEFT, rpDelay);
 		ex.execute(trucks[16]);
 		add(trucks[16]);
-		trucks[17] = new MovingGameObject(56, 350, 17, "GamePics/betterTruck.png", LEFT, rpDelay);
+		trucks[17] = new MovingGameObject(56, 350, 17, "../GamePics/betterTruck.png", LEFT, rpDelay);
 		ex.execute(trucks[17]);
 		add(trucks[17]);
 		//Populate Road Row 6
-		trucks[0] = new MovingGameObject(600, 300, 20, "GamePics/lambo.png", LEFT, rpDelay);
+		trucks[0] = new MovingGameObject(600, 300, 20, "../GamePics/lambo.png", LEFT, rpDelay);
 		ex.execute(trucks[0]);
 		add(trucks[0]);
-		trucks[1] = new MovingGameObject(328, 300, 20, "GamePics/lambo.png", LEFT, rpDelay);
+		trucks[1] = new MovingGameObject(328, 300, 20, "../GamePics/lambo.png", LEFT, rpDelay);
 		ex.execute(trucks[1]);
 		add(trucks[1]);
-		trucks[2] = new MovingGameObject(56, 300, 20, "GamePics/lambo.png", LEFT, rpDelay);
+		trucks[2] = new MovingGameObject(56, 300, 20, "../GamePics/lambo.png", LEFT, rpDelay);
 		ex.execute(trucks[2]);
 		add(trucks[2]);
 		
@@ -105,64 +105,64 @@ public class FroggerPanel extends JPanel implements Runnable{
 		add(player);
 			
 		//create logs
-		waterObjects[0] = new MovingGameObject(56, 200, 10, "GamePics/log.png", RIGHT, rpDelay);
+		waterObjects[0] = new MovingGameObject(56, 200, 10, "../GamePics/log.png", RIGHT, rpDelay);
 		ex.execute(waterObjects[0]);
 		add(waterObjects[0]);
-		waterObjects[1] = new MovingGameObject(306, 200, 10, "GamePics/log.png", RIGHT, rpDelay);
+		waterObjects[1] = new MovingGameObject(306, 200, 10, "../GamePics/log.png", RIGHT, rpDelay);
 		ex.execute(waterObjects[1]);
 		add(waterObjects[1]);
-		waterObjects[2] = new MovingGameObject(556, 200, 10, "GamePics/log.png", RIGHT, rpDelay);
+		waterObjects[2] = new MovingGameObject(556, 200, 10, "../GamePics/log.png", RIGHT, rpDelay);
 		ex.execute(waterObjects[2]);
 		add(waterObjects[2]);
-		waterObjects[3] = new MovingGameObject(140, 100, 10, "GamePics/log.png", RIGHT, rpDelay);
+		waterObjects[3] = new MovingGameObject(140, 100, 10, "../GamePics/log.png", RIGHT, rpDelay);
 		ex.execute(waterObjects[3]);
 		add(waterObjects[3]);
-		waterObjects[4] = new MovingGameObject(56, 100, 10, "GamePics/log.png", RIGHT, rpDelay);
+		waterObjects[4] = new MovingGameObject(56, 100, 10, "../GamePics/log.png", RIGHT, rpDelay);
 		ex.execute(waterObjects[4]);
 		add(waterObjects[4]);
-		waterObjects[5] = new MovingGameObject(440, 100, 10, "GamePics/log.png", RIGHT, rpDelay);
+		waterObjects[5] = new MovingGameObject(440, 100, 10, "../GamePics/log.png", RIGHT, rpDelay);
 		ex.execute(waterObjects[5]);
 		add(waterObjects[5]);
-		waterObjects[6] = new MovingGameObject(356, 100, 10, "GamePics/log.png", RIGHT, rpDelay);
+		waterObjects[6] = new MovingGameObject(356, 100, 10, "../GamePics/log.png", RIGHT, rpDelay);
 		ex.execute(waterObjects[6]);
 		add(waterObjects[6]);
 		
 		//create turtles
-		waterObjects[7] = new DissapearingGameObject(356, 150, 10, "GamePics/turtle.png", LEFT, 20, rpDelay);
+		waterObjects[7] = new DissapearingGameObject(356, 150, 10, "../GamePics/turtle.png", LEFT, 20, rpDelay);
 		ex.execute(waterObjects[7]);
 		add(waterObjects[7]);
-		waterObjects[8] = new DissapearingGameObject(406, 150, 10, "GamePics/turtle.png", LEFT, 20, rpDelay);
+		waterObjects[8] = new DissapearingGameObject(406, 150, 10, "../GamePics/turtle.png", LEFT, 20, rpDelay);
 		ex.execute(waterObjects[8]);
 		add(waterObjects[8]);
-		waterObjects[9] = new DissapearingGameObject(56, 150, 10, "GamePics/turtle.png", LEFT, 20, rpDelay);
+		waterObjects[9] = new DissapearingGameObject(56, 150, 10, "../GamePics/turtle.png", LEFT, 20, rpDelay);
 		ex.execute(waterObjects[9]);
 		add(waterObjects[9]);
-		waterObjects[10] = new DissapearingGameObject(106, 150, 10, "GamePics/turtle.png", LEFT, 20, rpDelay);
+		waterObjects[10] = new DissapearingGameObject(106, 150, 10, "../GamePics/turtle.png", LEFT, 20, rpDelay);
 		ex.execute(waterObjects[10]);
 		add(waterObjects[10]);
-		waterObjects[11] = new DissapearingGameObject(156, 150, 10, "GamePics/turtle.png", LEFT, 20, rpDelay);
+		waterObjects[11] = new DissapearingGameObject(156, 150, 10, "../GamePics/turtle.png", LEFT, 20, rpDelay);
 		ex.execute(waterObjects[11]);
 		add(waterObjects[11]);
-		waterObjects[12] = new DissapearingGameObject(356, 50, 10, "GamePics/turtle.png", LEFT, 40, rpDelay);
+		waterObjects[12] = new DissapearingGameObject(356, 50, 10, "../GamePics/turtle.png", LEFT, 40, rpDelay);
 		ex.execute(waterObjects[12]);
 		add(waterObjects[12]);
-		waterObjects[13] = new DissapearingGameObject(86, 50, 10, "GamePics/turtle.png", LEFT, 40, rpDelay);
+		waterObjects[13] = new DissapearingGameObject(86, 50, 10, "../GamePics/turtle.png", LEFT, 40, rpDelay);
 		ex.execute(waterObjects[13]);
 		add(waterObjects[13]);
-		waterObjects[14] = new DissapearingGameObject(136, 50, 10, "GamePics/turtle.png", LEFT, 40, rpDelay);
+		waterObjects[14] = new DissapearingGameObject(136, 50, 10, "../GamePics/turtle.png", LEFT, 40, rpDelay);
 		ex.execute(waterObjects[14]);
 		add(waterObjects[14]);
-		waterObjects[15] = new DissapearingGameObject(556, 50, 10, "GamePics/turtle.png", LEFT, 40, rpDelay);
+		waterObjects[15] = new DissapearingGameObject(556, 50, 10, "../GamePics/turtle.png", LEFT, 40, rpDelay);
 		ex.execute(waterObjects[15]);
 		add(waterObjects[15]);
-		waterObjects[16] = new DissapearingGameObject(606, 50, 10, "GamePics/turtle.png", LEFT, 40, rpDelay);
+		waterObjects[16] = new DissapearingGameObject(606, 50, 10, "../GamePics/turtle.png", LEFT, 40, rpDelay);
 		ex.execute(waterObjects[16]);
 		add(waterObjects[16]);
 		
 		//create life icons
 		for(int i = 1; i < 4; i++)
 		{
-			lives[i - 1] = new MovingGameObject(50*i, 650, "GamePics/frogFrame1.png", 40, 40, rpDelay);
+			lives[i - 1] = new MovingGameObject(50*i, 650, "../GamePics/frogFrame1.png", 40, 40, rpDelay);
 			ex.execute(lives[i - 1]);
 			add(lives[i - 1]);
 		}
@@ -175,11 +175,11 @@ public class FroggerPanel extends JPanel implements Runnable{
 		Graphics2D g2D = (Graphics2D)g;
 		
 		//set up background textures
-		setImage("GamePics/grassBar.png");
+		setImage("../GamePics/grassBar.png");
 		g2D.drawImage(img, 0, 0, img.getWidth(), img.getHeight(), this);
 		g2D.drawImage(img, 0, 250, img.getWidth(), img.getHeight(), this);
 		g2D.drawImage(img, 0, 600, img.getWidth(), img.getHeight(), this);
-		setImage("GamePics/waterBlock.png");
+		setImage("../GamePics/waterBlock.png");
 		g2D.drawImage(img, 0, 50, img.getWidth(), img.getHeight(), this);
 		g2D.setColor(Color.black);
 		g2D.fillRect(0,  650, 600, 50);
@@ -188,7 +188,7 @@ public class FroggerPanel extends JPanel implements Runnable{
 		g2D.drawString("Score: " + player.getScore(), 400, 675);
 		
 		//draw road lines
-		setImage("GamePics/roadTile.png");
+		setImage("../GamePics/roadTile.png");
 		for(int i = 6; i < 12; i++)
 		{
 			g2D.drawImage(img, 0, 50*i, img.getWidth(), img.getHeight(), this);
@@ -213,7 +213,7 @@ public class FroggerPanel extends JPanel implements Runnable{
 		g2D.setColor(Color.black);
 		for(int i = 0; i < 5; i++)
 		{
-			setImage("GamePics/marsh.png");
+			setImage("../GamePics/marsh.png");
 			g2D.drawImage(img, 40 + (i * 110), 10, 80, 40, this);
 			if(cubbiesDone[i])
 			{
@@ -242,7 +242,7 @@ public class FroggerPanel extends JPanel implements Runnable{
 				
 				player.setAlive(false);
 				player.playDeath();
-				lives[lifeCount].setPic("GamePics/splatSmall.png");
+				lives[lifeCount].setPic("../GamePics/splatSmall.png");
 				player.repaint();
 				try {
 					Thread.sleep(200);
@@ -442,7 +442,7 @@ public class FroggerPanel extends JPanel implements Runnable{
 		player.repaint();
 		for(int i = 0; i < 3; i++)
 		{
-			lives[i].setPic("GamePics/frogFrame1.png");
+			lives[i].setPic("../GamePics/frogFrame1.png");
 		}
 		for(int i = 0; i < 5; i++)
 		{
